@@ -15,13 +15,14 @@ group :test do
   end
 
   platforms :ruby, :mswin, :mingw do
-    gem 'mysql', '~> 2.8.1'
+    gem 'mysql', '~> 2.9'
     gem 'pg'
     gem 'sqlite3'
   end
 
   gem 'coveralls', :require => false
-  gem 'rspec', '>= 2.11'
+  gem 'rspec', '>= 3'
+  gem 'rubocop', '>= 0.23'
   gem 'simplecov', :require => false
 end
 
